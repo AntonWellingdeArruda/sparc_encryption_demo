@@ -5,7 +5,8 @@
   "description": "This repository contains a working prototype for selective disclosure of user identity in a blockchain payment system, built as part of **Project SPARC**.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "run-all": "node --loader ts-node/esm scripts/generateKeypair.ts && node --loader ts-node/esm scripts/createCommitment.ts && node --loader ts-node/esm encryption/encryptBlob.ts && node --loader ts-node/esm decryption/decryptBlob.ts"
   },
   "keywords": [],
   "author": "",
