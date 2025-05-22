@@ -46,7 +46,8 @@ Saves decrypted result to decryption/data/decrypted-blob.json.
 Prints the content to the terminal.
 
 
-If you prefer to run it sequencially:
+
+[OPTIONAL] If you prefer to run it sequencially:
 
 🔐 Step 3: Generate keypair
 ```
@@ -83,4 +84,5 @@ node --loader ts-node/esm decryption/decryptBlob.ts
 
 ```bash
 npm install --save-dev ts-node typescript
+npm install tweetnacl tweetnacl-util did-jwt did-jwt-vc secrets.js-grempe
 npm install secrets.js-grempe
