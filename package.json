@@ -1,0 +1,25 @@
+{
+  "name": "code_demo",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This repository contains a working prototype for selective disclosure of user identity in a blockchain payment system, built as part of **Project SPARC**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "did-jwt": "^8.0.15",
+    "did-jwt-vc": "^4.0.13",
+    "secrets.js-grempe": "^2.0.0",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
