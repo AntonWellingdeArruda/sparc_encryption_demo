@@ -22,15 +22,17 @@ The system enables compliance in illicit transaction investigations by:
 
 🛠️ Setup (Run only once)
 1. Initialize project (if not already done)
-
+```
 npm init -y
+```
 2. Install necessary packages
-
+```
 npm install --save-dev ts-node typescript
 npm install secrets.js-grempe
+```
 3. Enable ESM
 Update package.json:
-
+```
 json
 Copy
 Edit
@@ -51,10 +53,12 @@ Edit
     "skipLibCheck": true
   }
 }
+```
 🚀 Execution Steps
 🔐 Step 4: Generate keypair
-
+```
 node --loader ts-node/esm scripts/generateKeypair.ts
+```
 Output: Saves private.pem and public.pem in scripts/data/.
 
 📄 Step 5: Place your VC JWT in
@@ -63,18 +67,20 @@ scripts/data/vc-jwt.txt
 Just paste any JWT string there (mock is fine for testing).
 
 🧠 Step 6: Create commitment blob
-
+```
 node --loader ts-node/esm scripts/createCommitment.ts
 Output: Saves blob.json to scripts/data/blob.json.
-
+```
 🔐 Step 7: Encrypt blob via Shamir’s Secret Sharing
-
+```
 node --loader ts-node/esm encryption/encryptBlob.ts
 Output: Saves shares.json to encryption/shares.json.
-
+```
 🔓 Step 8: Decrypt blob from shares
-
+```
 node --loader ts-node/esm decryption/decryptBlob.ts
+```
+
 Output:
 
 Reconstructs blob from 3/5 shares.
