@@ -27,11 +27,27 @@ npm init -y
 ```
 2. Install necessary packages
 ```
-npm install --save-dev ts-node typescript
+npm install tweetnacl tweetnacl-util did-jwt did-jwt-vc secrets.js-grempe
 npm install secrets.js-grempe
 ```
 
 🚀 Execution Steps
+3. Run all files in one go
+```
+npm run run-all
+```
+
+Output:
+
+Reconstructs blob from 3/5 shares.
+
+Saves decrypted result to decryption/data/decrypted-blob.json.
+
+Prints the content to the terminal.
+
+
+If you prefer to run it sequencially:
+
 🔐 Step 3: Generate keypair
 ```
 node --loader ts-node/esm scripts/generateKeypair.ts
@@ -58,13 +74,6 @@ Output: Saves shares.json to encryption/shares.json.
 node --loader ts-node/esm decryption/decryptBlob.ts
 ```
 
-Output:
-
-Reconstructs blob from 3/5 shares.
-
-Saves decrypted result to decryption/data/decrypted-blob.json.
-
-Prints the content to the terminal.
 
 ### ✅ Prerequisites
 
