@@ -38,13 +38,18 @@ npm run run-all
 ```
 
 Output:
+```
+🔍 Decrypted Blob Content:
 
-Reconstructs blob from 3/5 shares.
-
-Saves decrypted result to decryption/data/decrypted-blob.json.
-
-Prints the content to the terminal.
-
+{
+  "commitment": "3b4f3189cbb74bc359ffda351bdc4536846cae15c408ed758d51e72d4f50b23c",
+  "client_id": "client123",
+  "bank_name": "ABN Amro",
+  "bank_id": "NLABN123456789",
+  "issuer": "did:example:bankx",
+  "vc": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiS1lDIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7Im5hbWUiOiJBbGljZSIsInJlc2lkZW5jeSI6IkVVIiwicGFzc2VkS1lDIjp0cnVlfX0sInN1YiI6ImRpZDpleGFtcGxlOmFsaWNlIiwibmJmIjoxNzQ3OTA3MjA4LCJpc3MiOiJkaWQ6ZXhhbXBsZTpiYW5reCJ9.7bWnaYLuU_YPg1oEIenfghH607DxpTwXiiCn21DUOsnTJEkvQrSKu1nRRXYrZy6CrJIsSAnVcCcJi5G8szQhDg"
+}
+```
 
 
 [OPTIONAL] If you prefer to run it sequencially:
